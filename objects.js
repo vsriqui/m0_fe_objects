@@ -14,19 +14,25 @@ var foods = {
 // Write code that prints all of the 'keys' of the foods variable 
 // you created above:
 // YOUR CODE HERE
+console.log(Object.keys(foods));
 
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
 // YOUR CODE HERE
+console.log(Object.values(foods));
 
 // Write code that prints the value of the second food of the foods variable 
 // you created above:
 // YOUR CODE HERE
 
+console.log(Object.keys(foods)[1]);
+
 // Write code that adds a food to the foods object. 
 // Then, print the updated object:
 // YOUR CODE HERE
 
+foods.turkeys = 3;
+console.log(foods);
 
 // -------------------
 // Part 2: Email
@@ -39,17 +45,28 @@ var foods = {
 // Declare a variable that stores an object. Each key should be an attribute of an email and each
 // value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
-// Write code that logs your email object to the terminal.
+var emailAir = {
+  sender: 'automations@airtableemail.com',
+  recipient: 'victorsriqui@gmail.com',
+  subject: 'Mod 0 Submission: Methods/Functions',
+  time: '20:24', 
+  date: '2/11/2023'
+}
 
+
+// Write code that logs your email object to the terminal.
+console.log(emailAir);
 
 // Write code that logs all of the 'keys' of the email object 
 // you created above:
 // YOUR CODE HERE
 
+console.log(Object.keys(emailAir));
+
 // Write code that logs all of the 'values' of the email object 
 // you created above:
 // YOUR CODE HERE
-
+console.log(Object.values(emailAir));
 
 // -------------------
 // Part 3: Many Emails - CHALLENGE!
@@ -99,3 +116,34 @@ console.log(posts[0]);
 // YOU DO: Create an array of at least 3 EMAIL Objects, using the same 
 // key-value pairs you used in your email Object above.
 // Then, print the email Array to the Terminal.
+
+
+var emails = [
+  {
+  sender: 'automations@airtableemail.com',
+  recipient: 'victorsriqui@gmail.com',
+  subject: 'Mod 0 Submission: Methods/Functions',
+  time: '20:24', 
+  date: '2/11/2023'
+  }, 
+  {
+  sender: 'hello@bootcampspot.com',
+  recipient: 'victorsriqui@gmail.com',
+  subject: 'How to Become a Software Engineer in 2023',
+  time: '15:14', 
+  date: '2/09/2023'
+  },
+  {
+  sender: 'hondafinancialservices@emailnotify.net',
+  recipient: 'victorsriqui@gmail.com',
+  subject: 'Honda - Monthly Statement Notification',
+  time: '21:25', 
+  date: '2/7/2023'    
+  }
+];
+
+console.log(emails)
+console.log(emails[2])
+console.log(Object.keys(emails[2]))
+console.log(Object.values(emails[1]))
+
